@@ -1,0 +1,379 @@
+.popup_bg {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px 60px;
+    width: 20%;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+.popup2{
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 6px;
+    width: 300px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+.popup3{
+    background: #fff;
+    padding: 30px 90px;
+    width: 30%;
+    border-radius: 6px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+.popup p {
+    font-size: 18px;
+    margin: 20px auto;
+}
+.popup2 p{
+    font-size: 18px;
+    margin:0px auto 10px auto;
+}
+.popup3 p{
+    font-size: 18px;
+    margin:0px auto 10px auto;
+}
+.popOK {
+    background: #095ce5;
+    color: #fff;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.popCancle {
+    background: #a1a1a1;
+    color: #fff;
+    width: 40%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.popOK2 {
+    background: #095ce5;
+    border-radius: 3px;
+    color: #fff;
+    width: 40%;
+    padding: 12px 0;
+    border: none;
+    font-size: 14px;
+}
+
+.popOK3 {
+    background: #fff;
+    color: #e84855;
+    border: 1px solid #e84855;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 40%;
+    padding: 11px 0;
+}
+
+.withdrawDanger_popup span {
+    white-space: pre-line;
+    font-size: 13px;
+    display: block;
+    line-height: 24px;
+    text-align: left;
+}
+
+.withdrawDanger_popup span:after {
+    content: '';
+    background: #bbb;
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin: 17px auto;
+}
+
+.withdrawDanger_popup ul {
+    margin-bottom: 36px;
+}
+
+.withdrawDanger_popup ul li {
+    color: #e84855;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.withdrawDanger_popup ul li strong {
+    color: #e84855;
+}
+
+.only_popup h3 {
+    font-size: 18px;
+    color: #095ce5;
+    font-family: 'GmarketSansM';
+    padding: 15px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.only_popup h3 span{
+    color:#095ce5 !important;
+}
+
+.only_popup p {
+    font-size: 14px;
+    white-space: pre-line;
+}
+
+.only_popup p span {
+    color: #e84855;
+}
+
+.only_popup p:nth-of-type(2) {
+    margin-top: 33px;
+}
+.coupon_scroll{
+    overflow-y: scroll;
+    height: 200px;
+    padding: 5px;
+}
+.coupon_scroll::-webkit-scrollbar,
+.coupon_scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.coupon_scroll::-webkit-scrollbar-thumb,
+.coupon_scroll::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 50px;
+}
+
+.coupon_scroll::-webkit-scrollbar-track,
+.coupon_scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.couponEnroll{
+    margin:5px 0 !important;
+}
+.couponEnroll button{
+    color:#fff;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+.coupon_scroll input[type="radio"]{
+    display: none;
+}
+.coupon_scroll input[type="radio"] + label{
+    background: url('../img/coupon_bg1.png') 0 0 no-repeat;
+    width: 207px;
+    text-align: left;
+    margin: 6px auto;
+    position: relative;
+    padding: 5px 18px;
+}
+.coupon_scroll input[type="radio"]:checked + label{
+    background: url('../img/coupon_bg2.png') 0 0 no-repeat;
+}
+.coupon_scroll input[type="radio"] + label p{
+    color:#4a4a4a;
+    font-size: 14px;
+    border-bottom: 1px solid #dbdbdb;
+    margin:5px 0 !important;
+    padding-bottom: 8px;
+}
+.coupon_scroll input[type="radio"]:checked + label p{
+    color:#8915f2;
+}
+.coupon_scroll input[type="radio"]:checked + label em{
+    background: url('../img/coupon_check2.png') 0 0 no-repeat;
+    width: 18px; height: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 0%; right: 10px;
+    transform: translateY(-50%);
+}
+.coupon_scroll input[type="radio"] + label span{
+    font-size: 9px;
+    color:#787878;
+    display: inline-block;
+}
+
+.couponInput input{
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    padding: 12.5px 10px;
+    width: 100%;
+}
+
+@media (max-width:480px) {
+    .popup {
+        background: #fff;
+        padding: 15px 20px;
+
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+        border-radius: 5px;
+    }
+    .popup3{
+        background: #fff;
+        padding: 15px 20px;
+
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .popup p {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+
+    .popOK {
+        font-size: 14px;
+        border-radius: 3px;
+        background: #095ce5;
+        color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+    }
+
+    .popCancle {
+        background: #a1a1a1;
+        border-radius: 3px;
+        color: #fff;
+        width: 48%;
+        padding: 10px 0;
+        border: none;
+        font-size: 14px;
+    }
+
+    .popOK2 {
+        background: #095ce5;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        width: 48%;
+        padding: 10px 0px;
+        border: none;
+    }
+
+    .popOK3 {
+        background: #fff;
+        color: #e84855;
+        border: 1px solid #e84855;
+        border-radius: 3px;
+        font-size: 14px;
+        width: 48%;
+        padding: 10px 0px;
+    }
+
+
+    .withdrawDanger_popup span {
+        white-space: pre-line;
+        font-size: 13px;
+        display: block;
+        line-height: 24px;
+        text-align: left;
+    }
+    .withdrawDanger_popup ul li {
+        color: #e84855;
+        text-align: left;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+
+    .only_popup h3 {
+        font-size: 16px;
+        color: #095ce5;
+        font-weight: 400;
+    }
+
+    .only_popup p:nth-of-type(2) {
+        margin-top: 15px;
+    }
+
+
+    .couponEnroll button{
+        color:#fff;
+        border: none;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 3px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+    .popup {
+        background: #fff;
+        padding: 30px 20px;
+
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+    }
+
+    .popup p {
+        font-size: 14px;
+        margin: 20px auto;
+    }
+
+    .popCancle {
+        background: #666;
+        color: #fff;
+        width: 48%;
+        padding: 14px 10px;
+        border: none;
+        font-size: 14px;
+    }
+
+    .popOK2 {
+        background: #095ce5;
+        color: #fff;
+        font-size: 14px;
+        width: 48%;
+        padding: 14px 5px;
+        border: none;
+    }
+}
